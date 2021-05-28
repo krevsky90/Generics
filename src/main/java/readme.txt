@@ -3,26 +3,26 @@ http://www.quizful.net/post/java-generics-tutorial
 !! https://javarevisited.blogspot.com/2012/06/10-interview-questions-on-java-generics.html
 !!! https://habr.com/ru/company/sberbank/blog/416413/
 
-ВОПРОСЫ:
-+ 1) в чем разница?
+Р’РћРџР РћРЎР«:
++ 1) РІ С‡РµРј СЂР°Р·РЅРёС†Р°?
     Set<? extends MyClass>
     Set<T extends MyClass>
-    ответ: разница начинается, когда нужно повторно обратиться к типу элемента.
-            например, метод должен возвращать значение передаваемого типа. Мы не можем вернуть тип ?, но можем вернуть T
-+ 2) в чем разница?
+    РѕС‚РІРµС‚: СЂР°Р·РЅРёС†Р° РЅР°С‡РёРЅР°РµС‚СЃСЏ, РєРѕРіРґР° РЅСѓР¶РЅРѕ РїРѕРІС‚РѕСЂРЅРѕ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє С‚РёРїСѓ СЌР»РµРјРµРЅС‚Р°.
+            РЅР°РїСЂРёРјРµСЂ, РјРµС‚РѕРґ РґРѕР»Р¶РµРЅ РІРѕР·РІСЂР°С‰Р°С‚СЊ Р·РЅР°С‡РµРЅРёРµ РїРµСЂРµРґР°РІР°РµРјРѕРіРѕ С‚РёРїР°. РњС‹ РЅРµ РјРѕР¶РµРј РІРµСЂРЅСѓС‚СЊ С‚РёРї ?, РЅРѕ РјРѕР¶РµРј РІРµСЂРЅСѓС‚СЊ T
++ 2) РІ С‡РµРј СЂР°Р·РЅРёС†Р°?
     List<?> list
     List<Object> list
-    ответ:
-        List<?> list - лист с НЕИЗВЕСТНЫМ типом
-        List<Object> list - лист с ЛЮБЫМ типом
+    РѕС‚РІРµС‚:
+        List<?> list - Р»РёСЃС‚ СЃ РќР•РР—Р’Р•РЎРўРќР«Рњ С‚РёРїРѕРј
+        List<Object> list - Р»РёСЃС‚ СЃ Р›Р®Р‘Р«Рњ С‚РёРїРѕРј
         You can assign List<String>, List<Integer> to List<?>
         but you can not assign List<String> to List<Object>.
-    доп:
-        List<?> равносильно List<? extends Object>
-+ 2.1) в чем разница?
+    РґРѕРї:
+        List<?> СЂР°РІРЅРѕСЃРёР»СЊРЅРѕ List<? extends Object>
++ 2.1) РІ С‡РµРј СЂР°Р·РЅРёС†Р°?
     List<Object> list
-    просто List
-    ответ:
+    РїСЂРѕСЃС‚Рѕ List
+    РѕС‚РІРµС‚:
         1) Main difference between raw type and parametrized type List<Object> is that, compiler will not check type-safety of raw type
             at compile time but it will do that for parametrized type and by using Object as Type it inform compiler that it can hold any Type of Object
             e.g. String or Integer. This Java Generics interview question is based on correct understanding of  raw type in Generics.
@@ -36,10 +36,8 @@ http://www.quizful.net/post/java-generics-tutorial
             item = (String) listOfRawTypes.get(1); //ClassCastException because Integer can not be cast in String
 
             Read more: https://javarevisited.blogspot.com/2012/06/10-interview-questions-on-java-generics.html#ixzz6JJGRNVzE
-3) в чем разница?
+3) РІ С‡РµРј СЂР°Р·РЅРёС†Р°?
     generic_type.BoxGenericType<String> b1 = new generic_type.BoxGenericType<>()
     generic_type.BoxGenericType<String> b1 = new generic_type.BoxGenericType()
-    ответ:
+    РѕС‚РІРµС‚:
 4)
-
-
